@@ -20,3 +20,9 @@
  - **fin config_drupal**: Faz setup básico do drupal para base do serve docksal e configura caches para livereload
  - **fin install_theme**: Instala o theme Básico com stylus + babel ECMAscript6 + Browsersync with gulp
  - **fin config_git**: Remove as configs defaut do repositório para possibilitar uma nova config
+
+
+ ## Todo
+ - Containerizar o frontools
+ - Traduzir para o inglês
+ - Mudar para o nginx
