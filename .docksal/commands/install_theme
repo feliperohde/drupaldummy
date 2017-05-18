@@ -11,9 +11,7 @@ mkdir docroot/themes/custom
 
 cd docroot/themes/custom
 
-# // https://github.com/feliperohde/salse/archive/v0.1.tar.gz
-curl -L https://github.com/feliperohde/salse/tarball/v0.1 | tar zx
-# tar -xvzf salse-0.1.tar.gz -C docroot/themes/custom/salse/
+# // https://github.com/feliperohde/salse/releases
+curl -L https://github.com/feliperohde/salse/tarball/v0.2 | tar zx
 
-mv feliperohde-salse-7663e69/ salsa/
-# rm salse-0.1.tar.gz
+mv feliperohde-salse-32ed5c9/ salsa/

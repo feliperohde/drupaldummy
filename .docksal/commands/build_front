@@ -7,6 +7,7 @@
 
 cd $PROJECT_ROOT
 
-cd docroot/themes/custom/salsa
-npm install
-gulp build
+# WORKDIR /var/www/ into dockerfile
+
+docker exec -it drupaldummy_front_1 sh -c "cd /var/www/docroot/themes/custom/salsa && gulp build"
+

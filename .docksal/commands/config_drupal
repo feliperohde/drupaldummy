@@ -14,4 +14,5 @@ sudo mv development.services.yml docroot/sites/development.services.yml
 sudo mv settings.local.php docroot/sites/default/settings.local.php
 sudo mv settings.php docroot/sites/default/settings.php
 
-rm configdev.tar.gz
+
+# rm configdev.tar.gz

@@ -11,8 +11,10 @@ command_exists () {
 
 cd $PROJECT_ROOT
 
+docker exec -it drupaldummy_front_1 sh -c "npm install -g gulp"
+docker exec -it drupaldummy_front_1 sh -c "cd /var/www/docroot/themes/custom/salsa && npm install"
+
 cd docroot/themes/custom/salsa
-npm install
 
 if command_exists subl ; then
     subl .

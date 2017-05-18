@@ -53,3 +53,22 @@ services:
     dns:
       - ${DOCKSAL_DNS1}
       - ${DOCKSAL_DNS2}
+
+
+  # frontools
+  # Used for all console commands and tools.
+  front:
+    hostname: front
+    image: dummy/frontools
+    build: ${PROJECT_ROOT}/.docksal/build/frontools
+    volumes:
+      # Project root volume
+      - project_root:/var/www:rw
+
+    ports:
+      - "3000:3000"
+    environment:
+      - XDEBUG_ENABLED=${XDEBUG_ENABLED:-0}
+    dns:
+      - ${DOCKSAL_DNS1}
+      - ${DOCKSAL_DNS2}
