@@ -1,4 +1,4 @@
-# Requirements
+# Requisitos
 
 - Docker 1.11+ [>>](https://docs.docker.com/engine/installation/)
 - Docksal [>>](http://docksal.readthedocs.io/en/develop/env-setup/)
