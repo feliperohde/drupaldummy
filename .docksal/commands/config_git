@@ -9,3 +9,5 @@ cd $PROJECT_ROOT
 
 rm -rf .git/
 rm .gitignore
+
+git init
