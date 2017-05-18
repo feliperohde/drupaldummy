@@ -1,6 +1,6 @@
 #!/bin/bash
 
-## Instala as dependencias do theme e estarta um server local com proxy
+## Instala as dependencias do theme
 ## Usage:   fin start_front
 ## Parameters:
 ##      none
