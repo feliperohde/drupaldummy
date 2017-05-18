@@ -1,0 +1,16 @@
+#!/bin/bash
+
+## roda todos os comandos para ter um ambiente dev
+## Usage:   fin all
+## Parameters:
+##      none
+
+cd $PROJECT_ROOT
+
+fin download_drupal
+sleep 1
+fin config_drupal
+sleep 1
+fin install_theme
+sleep 1
+fin start_front

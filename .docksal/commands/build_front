@@ -1,0 +1,12 @@
+#!/bin/bash
+
+## Instala as dependencias do theme e estarta um server local com proxy
+## Usage:   fin start_front
+## Parameters:
+##      none
+
+cd $PROJECT_ROOT
+
+cd docroot/themes/custom/salsa
+npm install
+gulp build

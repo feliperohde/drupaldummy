@@ -1,0 +1,17 @@
+#!/bin/bash
+
+## Instala as dependencias do theme e estarta um server local com proxy
+## Usage:   fin start_theme
+## Parameters:
+##      none
+
+cd $PROJECT_ROOT
+
+tar -xvzf configdev.tar.gz
+
+echo "Necessária senha de sudo para mover alguns arquivos de config com permissões."
+sudo mv development.services.yml docroot/sites/development.services.yml
+sudo mv settings.local.php docroot/sites/default/settings.local.php
+sudo mv settings.php docroot/sites/default/settings.php
+
+rm configdev.tar.gz

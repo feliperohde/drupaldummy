@@ -1,0 +1,19 @@
+#!/bin/bash
+
+## Instala o theme Básico com stylus + babel ECMAscript6 + Browsersync with gulp
+## Usage:   fin install_theme
+## Parameters:
+##      none
+
+cd $PROJECT_ROOT
+
+mkdir docroot/themes/custom
+
+cd docroot/themes/custom
+
+# // https://github.com/feliperohde/salse/archive/v0.1.tar.gz
+curl -L https://github.com/feliperohde/salse/tarball/v0.1 | tar zx
+# tar -xvzf salse-0.1.tar.gz -C docroot/themes/custom/salse/
+
+mv feliperohde-salse-7663e69/ salsa/
+# rm salse-0.1.tar.gz

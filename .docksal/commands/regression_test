@@ -1,0 +1,12 @@
+#!/bin/bash
+
+## Gera novos prints e compara com a referência ja salva
+## Usage:   fin regression_test
+## Parameters:
+##      none
+
+cd $PROJECT_ROOT
+
+cd docroot/themes/custom/salsa
+
+backstop test

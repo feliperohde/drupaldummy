@@ -1,0 +1,21 @@
+#!/bin/bash
+
+## Faz o setup para testes de regressão visual usando Backstopjs
+## Usage:   fin setup_regression_tests
+## Parameters:
+##      none
+
+cd $PROJECT_ROOT
+
+
+echo "Necessária senha de sudo para instalar globalmente o backstopjs."
+sudo npm install -g backstopjs
+
+cd docroot/themes/custom/salsa
+
+mkdir backstop_data/
+mkdir backstop_data/bitmaps_reference/
+mkdir backstop_data/bitmaps_test/
+mkdir backstop_data/casper_scripts/
+mkdir backstop_data/html_report/
+mkdir backstop_data/ci_report/

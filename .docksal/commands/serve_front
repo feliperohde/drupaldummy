@@ -1,0 +1,11 @@
+#!/bin/bash
+
+## Inicia um servidor local com watch
+## Usage:   fin serve_front
+## Parameters:
+##      none
+
+cd $PROJECT_ROOT
+
+cd docroot/themes/custom/salsa
+gulp serve --open

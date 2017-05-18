@@ -1,0 +1,12 @@
+#!/bin/bash
+
+## Gera a referencia de prints com base nos cenários escritos em backstop.json
+## Usage:   fin regression_reference
+## Parameters:
+##      none
+
+cd $PROJECT_ROOT
+
+cd docroot/themes/custom/salsa
+
+backstop reference
