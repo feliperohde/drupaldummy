@@ -1,0 +1,11 @@
+#!/bin/bash
+
+## Remove as configs defaut do repositório para possibilitar uma nova config
+## Usage:   fin config_git
+## Parameters:
+##      none
+
+cd $PROJECT_ROOT
+
+rm -rf .git/
+rm .gitignore

@@ -14,3 +14,5 @@ sleep 1
 fin install_theme
 sleep 1
 fin start_front
+sleep 1
+fin serve_front

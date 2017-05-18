@@ -1,7 +1,7 @@
 #!/bin/bash
 
-## Instala as dependencias do theme e estarta um server local com proxy
-## Usage:   fin start_theme
+## Faz setup básico do drupal para base do serve docksal e configura caches para livereload
+## Usage:   fin config_drupal
 ## Parameters:
 ##      none
 
