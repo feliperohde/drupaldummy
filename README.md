@@ -23,6 +23,6 @@
 
 
  ## Todo
- - Containerizar o frontools
+ - Containerizar o backstopjs
  - Traduzir para o inglês
  - Mudar para o nginx
