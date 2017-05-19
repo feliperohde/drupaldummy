@@ -6,6 +6,7 @@
 ##      none
 
 cd $PROJECT_ROOT
+sudo rm -rf docroot/
 mkdir docroot
 # //https://ftp.drupal.org/files/projects/drupal-8.3.2.tar.gz
 curl -O https://ftp.drupal.org/files/projects/drupal-8.3.2.tar.gz

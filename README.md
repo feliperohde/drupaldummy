@@ -1,7 +1,7 @@
 # Requisitos
 
 - Docker 1.11+ [>>](https://docs.docker.com/engine/installation/)
-- Docksal [>>](http://docksal.readthedocs.io/en/develop/env-setup/)
+- Docksal [>>](http://docksal.readthedocs.io/en/master/getting-started/env-setup/)
 
 ##  Como usar
 - **fin start**: Sobe os containers básicos (LAMP)
@@ -19,6 +19,7 @@
  - **fin config_drupal**: Faz setup básico do drupal para base do serve docksal e configura caches para livereload
  - **fin install_theme**: Instala o theme Básico com stylus + babel ECMAscript6 + Browsersync with gulp
  - **fin config_git**: Remove as configs defaut do repositório para possibilitar uma nova config
+ - **fin config_dns**: Insere no arquivo resolv.conf do host o dns do google 
 
 
  ## Todo
