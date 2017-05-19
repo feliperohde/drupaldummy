@@ -7,11 +7,14 @@
 
 cd $PROJECT_ROOT
 
-tar -xvzf configdev.tar.gz
+# tar -xvzf configdev.tar.gz
 
 echo "Necessária senha de sudo para mover alguns arquivos de config com permissões."
-sudo mv development.services.yml docroot/sites/development.services.yml
-sudo mv settings.local.php docroot/sites/default/settings.local.php
-sudo mv settings.php docroot/sites/default/settings.php
 
-rm configdev.tar.gz
+sudo cp configdev/development.services.yml docroot/sites/development.services.yml
+sudo cp configdev/settings.local.php docroot/sites/default/settings.local.php
+sudo cp configdev/settings.php docroot/sites/default/settings.php
+
+sudo rm -rf configdev/
+
+#rm configdev.tar.gz

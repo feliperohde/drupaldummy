@@ -1,0 +1,24 @@
+#!/bin/bash
+
+## Insere no arquivo resolv.conf do host o dns do google 
+## Usage:   fin configure_dns
+## Parameters:
+##      none
+
+command_exists () {
+    type "$1" &> /dev/null ;
+}
+
+echo "Necessária permissão de sudo para poder gravar no arquivo /etc/resolv.conf"
+
+sudo cat <<EOT >> /etc/resolv.conf
+	nameserver 8.8.8.8
+	nameserver 8.8.4.4
+EOT
+
+if command_exists service ; then
+	echo "Necessária permissão de sudo restartar o serviço do docker"
+    sudo service docker restart
+else
+	echo "Reinicie o serviço do docker..."
+fi

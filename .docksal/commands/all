@@ -6,13 +6,31 @@
 ##      none
 
 cd $PROJECT_ROOT
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
 
+echo -e "${GREEN}Instalando drupal...${NC}"
 fin download_drupal
-sleep 1
+sleep 2
+
+echo -e "${GREEN}Configurando drupal...${NC}"
 fin config_drupal
 sleep 1
+
+echo -e "${GREEN}Instalando o theme no drupal...${NC}"
 fin install_theme
 sleep 1
+
+echo -e "${GREEN}Instalando as dependencias do theme...${NC}"
 fin start_front
 sleep 1
+
+echo -e "${GREEN}Buildando os assets do theme...${NC}"
+fin build_front
+sleep 1
+
+echo -e "${GREEN}Removendo as referências deste repositório...${NC}"
+fin config_git
+
+echo -e "${GREEN}Criando um servidor para desenvolvimento local...${NC}"
 fin serve_front

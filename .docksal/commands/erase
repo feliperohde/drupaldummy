@@ -1,0 +1,17 @@
+#!/bin/bash
+
+## Apaga todos os containers docker e todas as imagens docker
+## Usage:   fin erase
+## Parameters:
+##      none
+
+fin stop
+fin remove
+
+# apaga todos os containers, inclusive de outros projetos
+docker rm `docker ps -a -q` -f
+# apaga todas imagens, inclusive de outros projetos
+docker rmi `docker images -a -q`
+
+# necessário para o fin recriar a estrutura básica de funcionamento após ter deletado tudo :(
+fin reset system
