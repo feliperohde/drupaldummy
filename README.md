@@ -31,4 +31,3 @@ A idéia deste repositório é fornecer uma infraestrutura básica para inicar p
  ## Todo
  - Containerizar o backstopjs
  - Traduzir para o inglês
- - Mudar para o nginx
