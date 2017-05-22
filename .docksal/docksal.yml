@@ -60,6 +60,7 @@ services:
     hostname: front
     image: dummy/frontools
     build: ${PROJECT_ROOT}/.docksal/build/frontools
+    container_name: ${PROJECT_NAME}_front_1
     volumes:
       # Project root volume
       - project_root:/var/www:rw
