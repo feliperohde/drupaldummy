@@ -15,6 +15,6 @@ sudo cp configdev/development.services.yml docroot/sites/development.services.ym
 sudo cp configdev/settings.local.php docroot/sites/default/settings.local.php
 sudo cp configdev/settings.php docroot/sites/default/settings.php
 
-sudo rm -rf configdev/
+# sudo rm -rf configdev/
 
 #rm configdev.tar.gz

@@ -7,7 +7,7 @@
 
 cd $PROJECT_ROOT
 GREEN='\033[0;32m'
-YELLOW='\e[0;33m';  
+YELLOW='\e[0;33m';
 NC='\033[0m' # No Color
 
 command_exists () {
@@ -15,11 +15,11 @@ command_exists () {
 }
 
 
-if command_exists xdg-open ; then
-	echo -e "${YELLOW}Abrindo uma aba no seu browswer preferido!...${NC}"
-    xdg-open "http://localhost:3000"
-fi
+# if command_exists xdg-open ; then
+# 	echo -e "${YELLOW}Abrindo uma aba no seu browswer preferido!...${NC}"
+#     xdg-open "http://localhost:3000"
+# fi
 
 echo -e "${YELLOW}Criando um server local com proxy...${NC}"
 
-docker exec -it drupaldummy_front_1 sh -c "cd /var/www/docroot/themes/custom/salsa && npm run gulp serve"
+docker exec -it ${PROJECT_NAME}_front_1 sh -c "cd /var/www/docroot/themes/custom/salsa && npm run gulp serve"

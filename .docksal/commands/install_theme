@@ -14,7 +14,7 @@ mkdir docroot/themes/custom
 cd docroot/themes/custom
 
 # // https://github.com/feliperohde/salse/releases
-curl -L https://github.com/feliperohde/salse/tarball/v0.8 | tar zx
+curl -L https://github.com/feliperohde/salse/tarball/v0.8.1 | tar zx
 
 mv feliperohde-salse-*/ salsa/
 

@@ -11,11 +11,4 @@ command_exists () {
 
 cd $PROJECT_ROOT
 
-docker exec -it drupaldummy_front_1 sh -c "cd /var/www/docroot/themes/custom/salsa && npm install"
-
-cd docroot/themes/custom/salsa
-
-if command_exists subl ; then
-    subl .
-fi
-
+docker exec -it ${PROJECT_NAME}_front_1 sh -c "cd /var/www/docroot/themes/custom/salsa && npm install"
